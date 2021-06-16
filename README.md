@@ -29,10 +29,10 @@ In order to pre-train and then finetune a [T5 small](https://github.com/google-r
 
     The datasets for the T5 model and for the N-Grams models can be found here: https://drive.google.com/drive/folders/1BFkABylRrbHaqUmH7QR8R47PQTEzmjGb?usp=sharing
 
-* ##### Pre-trainig/Fine-tuning 
+* ##### Pre-training/Fine-tuning 
   
     To pre-train and then, fine-tune T5, please use the script we provide here:
-    - <a href ='https://github.com/antonio-mastropaolo/ICSME2021-Completion/blob/main/Models-Code/T5/Pre-training/Pretraining.ipynb>Pre-Training</a> 
+    - <a href ='https://github.com/antonio-mastropaolo/ICSME2021-Completion/blob/main/Models-Code/T5/Pre-training/Pretraining.ipynb'>Pre-Training</a> 
     -  <a href ='https://github.com/antonio-mastropaolo/ICSME2021-Completion/blob/main/Models-Code/T5/Fine-tuning/Finetuning.ipynb'>Fine-Tuning</a> 
 
 
