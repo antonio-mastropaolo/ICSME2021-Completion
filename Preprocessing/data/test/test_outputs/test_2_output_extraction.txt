@@ -1,0 +1,58 @@
+************* test_2 *************
+if (this.previousMetadata != null) {
+ <sep> multi line comment
+ single line comment
+ single line
+ <sep>
+ List<ItemMetadata> items = this.previousMetadata.getItems();
+
+**************************************
+
+************* test_2 *************
+List<ItemMetadata> items = this.previousMetadata.getItems();
+<sep> comment up to date <sep>
+ for (ItemMetadata item : items) {
+
+**************************************
+
+************* test_2 *************
+for (ItemMetadata item : items) { 
+<sep> c1 c2 c3 <sep>
+
+**************************************
+
+************* test_2 *************
+if (shouldBeMerged(item)) {
+<sep> still valid comment <sep>
+ metadata.add(item);
+
+**************************************
+
+************* test_2 *************
+metadata.add(item); 
+ <sep> place very high stake on this call <sep>
+ calling.call(x);
+
+**************************************
+
+************* test_2 *************
+for (ItemMetadata item : items) { 
+<sep> c1 c2 c3 <sep>
+
+**************************************
+
+************* test_2 *************
+}
+
+ <sep> c7 c8 c9 <sep>
+}
+
+**************************************
+
+************* test_2 *************
+if (shouldBeMerged(item)) {
+<sep> still valid comment <sep>
+ metadata.add(item);
+
+**************************************
+

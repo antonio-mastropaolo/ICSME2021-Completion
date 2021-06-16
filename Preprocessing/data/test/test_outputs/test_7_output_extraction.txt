@@ -1,0 +1,69 @@
+************* test_7 *************
+<sep> c1 c2 c2 
+ c3 c3 c3 <sep>
+ List<ItemMetadata> items = a;
+
+**************************************
+
+************* test_7 *************
+List<ItemMetadata> items = a; 
+<sep> comment up to _NUM_ <sep>
+ for (ItemMetadata item : items) {
+
+**************************************
+
+************* test_7 *************
+for (ItemMetadata item : items) { 
+ <sep> c0
+ c1
+ c2
+ <sep>
+
+**************************************
+
+************* test_7 *************
+<sep> c3 c4 c5 <sep>
+ if (shouldBeMerged(item)) {
+
+**************************************
+
+************* test_7 *************
+if (shouldBeMerged(item)) {
+<sep> generic comment 1 2 3 
+ c0 c0 c0 <sep>
+ cdtTrxTxInf.getPmtId().setEndToEndId(SepaUtil.getProperty( SEPA_PARAMS,
+
+**************************************
+
+************* test_7 *************
+cdtTrxTxInf.getPmtId().setEndToEndId(SepaUtil.getProperty( SEPA_PARAMS,
+<sep> c4 c5 c6 <sep>
+ PARAM_1,
+
+**************************************
+
+************* test_7 *************
+PARAM_1, 
+<sep> param2
+ param2
+ param2 <sep>
+ PARAM_2,
+
+**************************************
+
+************* test_7 *************
+PARAM_2, 
+<sep> c7 c8 c9 <sep>
+ True)); 
+}
+
+**************************************
+
+************* test_7 *************
+}
+<sep> still valid comment <sep>
+ return metadata;
+}
+
+**************************************
+

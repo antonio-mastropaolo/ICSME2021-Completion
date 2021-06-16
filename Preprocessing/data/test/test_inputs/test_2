@@ -1,0 +1,30 @@
+public ConfigurationMetadata getMetadata() {
+		ConfigurationMetadata metadata = new ConfigurationMetadata();
+		for (ItemMetadata item : this.metadataItems) {
+			metadata.add(item);
+		}
+		if (this.previousMetadata != null) {
+		    /* multi line comment
+		       single line comment
+		       single line
+		    */
+			List<ItemMetadata> items = this.previousMetadata.getItems();
+			for (ItemMetadata item : items) { // comment up to date
+				// c1 c2 c3
+
+				if (shouldBeMerged(item)) {
+					metadata.add(item); // still valid comment
+					/* place very high stake on this call */
+					calling.call(x);
+					// c1 c2 c3
+				}
+
+				// c4 c5 c6
+
+			}
+
+			/* c7 c8 c9  */
+		}
+		// still valid comment
+		return metadata;
+}

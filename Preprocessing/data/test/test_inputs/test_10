@@ -1,0 +1,24 @@
+public static double getNormalizationFactor(IAtomContainer container) {
+        double bondlength = 0.0;
+        double ratio;
+        /*
+         * Desired bond length for storing structures in MDL mol files This
+         * should probably be set externally (from system wide settings)
+         */
+        double desiredBondLength = 1.5;
+        // loop over all bonds and determine the mean bond distance
+        int counter = 0;
+        for (IBond bond : container.bonds()) {
+            // only consider two atom bonds into account
+            if (bond.getAtomCount() == 2) {
+                counter++;
+                IAtom atom1 = bond.getBegin();
+                IAtom atom2 = bond.getEnd();
+                bondlength += Math.sqrt(Math.pow(atom1.getPoint2d().x - atom2.getPoint2d().x, 2)
+                        + Math.pow(atom1.getPoint2d().y - atom2.getPoint2d().y, 2));
+            }
+        }
+        bondlength = bondlength / counter;
+        ratio = desiredBondLength / bondlength;
+        return ratio;
+    }

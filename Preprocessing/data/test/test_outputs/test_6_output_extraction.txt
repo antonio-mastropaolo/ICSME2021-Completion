@@ -1,0 +1,44 @@
+************* test_6 *************
+<sep> c1 c2 c2 <sep>
+ List<ItemMetadata> items = MAX;
+
+**************************************
+
+************* test_6 *************
+List<ItemMetadata> items = MAX;
+<sep> comment up to date <sep>
+ for (ItemMetadata item : items) {
+
+**************************************
+
+************* test_6 *************
+for (ItemMetadata item : items) { 
+ <sep> c1 c2 c3 
+ c4 c5 c6 <sep>
+ if (shouldBeMerged(item)) {
+
+**************************************
+
+************* test_6 *************
+if (shouldBeMerged(item)) {
+<sep> generic comment 1 2 3 <sep>
+ cdtTrxTxInf.getPmtId().setEndToEndId(SepaUtil.getProperty( SEPA_PARAMS,
+
+**************************************
+
+************* test_6 *************
+for (ItemMetadata item : items) { 
+ <sep> c1 c2 c3 
+ c4 c5 c6 <sep>
+ if (shouldBeMerged(item)) {
+
+**************************************
+
+************* test_6 *************
+}
+<sep> still valid comment <sep>
+ return metadata;
+}
+
+**************************************
+

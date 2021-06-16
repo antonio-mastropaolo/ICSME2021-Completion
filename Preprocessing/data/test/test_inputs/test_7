@@ -1,0 +1,33 @@
+public ConfigurationMetadata getMetadata() {
+		ConfigurationMetadata metadata = new ConfigurationMetadata();
+		for (ItemMetadata item : this.metadataItems) {
+			metadata.add(item);
+		}
+		if (this.previousMetadata != /*x1*/1 + /*x2*/4) {
+
+		    /* c1 c2 c2*/
+			List<ItemMetadata> items = a; // c3 c3 c3
+			for (ItemMetadata item : items) { // comment up to 12/05/2019
+				/*  c0
+				    c1
+				    c2
+				*/
+
+				// c3 c4 c5
+				if (shouldBeMerged(item)) {
+					//generic comment 1 2 3
+					/* c0 c0 c0 */
+					cdtTrxTxInf.getPmtId().setEndToEndId(SepaUtil.getProperty(  /*  sepaParams  */SEPA_PARAMS,
+                             PARAM_1, // c4 c5 c6
+                             PARAM_2, /* param2
+                             param2
+                             param2 */
+                             /* SepaUtil.insertIndex */ True)); // c7 c8 c9
+				}
+
+			}
+
+		}
+		// still valid comment
+		return metadata;
+}

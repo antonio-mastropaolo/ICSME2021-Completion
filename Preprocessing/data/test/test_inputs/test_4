@@ -1,0 +1,25 @@
+public ConfigurationMetadata getMetadata() {
+		ConfigurationMetadata metadata = new ConfigurationMetadata();
+		for (ItemMetadata item : this.metadataItems) {
+			metadata.add(item);
+		}
+		if (this.previousMetadata != /*x1*/1 + /*x2*/4) {
+
+		    /* c1 c2 c2*/
+			List<ItemMetadata> items = this.previousMetadata.getItems();
+			for (ItemMetadata item : items) { // comment up to date
+				/* ccc ccc ccc */
+				// c1 c2 c3
+				if (shouldBeMerged(item)) {
+					//generic comment 1 2 3
+					cdtTrxTxInf.getPmtId().setEndToEndId(SepaUtil.getProperty(  /*  sepaParams  */SEPA_PARAMS,
+                            PARAM_1, // c4 c5 c6
+                            SepaUtil.insertIndex)); //c7 c8 c9
+				}
+
+			}
+
+		}
+		// still valid comment
+		return metadata;
+}

@@ -1,0 +1,27 @@
+public ConfigurationMetadata getMetadata() {
+ ConfigurationMetadata metadata = new ConfigurationMetadata();
+ for (ItemMetadata item : this.metadataItems) {
+ metadata.add(item);
+ }
+ if (this.previousMetadata != null) {
+ <sep> multi lint comment
+ single line 
+ single line 
+ <sep>
+ List<ItemMetadata> items = this.previousMetadata.getItems();
+<sep> comment up to date <sep>
+ for (ItemMetadata item : items) { 
+<sep> c1 c2 c3 <sep>
+
+ if (shouldBeMerged(item)) {
+<sep> c1 c2 c3 <sep>
+
+<sep> still valid comment <sep>
+ metadata.add(item); 
+ <sep> place very high stake on this call <sep>
+ calling.call(x);
+ }
+ }
+ }
+ return metadata;
+}

@@ -1,0 +1,46 @@
+************* test_5 *************
+<sep> c1 c2 c2 <sep>
+ List<ItemMetadata> items = this.previousMetadata.getItems();
+
+**************************************
+
+************* test_5 *************
+List<ItemMetadata> items = this.previousMetadata.getItems();
+<sep> comment up to date <sep>
+ for (ItemMetadata item : items) {
+
+**************************************
+
+************* test_5 *************
+for (ItemMetadata item : items) { 
+ <sep> ccc ccc ccc 
+ c1 c2 c3 <sep>
+ if (shouldBeMerged(item)) {
+
+**************************************
+
+************* test_5 *************
+if (shouldBeMerged(item)) {
+<sep> generic comment 1 2 3 <sep>
+ cdtTrxTxInf.getPmtId().setEndToEndId(SepaUtil.getProperty( SEPA_PARAMS,
+
+**************************************
+
+************* test_5 *************
+cdtTrxTxInf.getPmtId().setEndToEndId(SepaUtil.getProperty( SEPA_PARAMS,
+<sep> c4 c5 c6 <sep>
+ PARAM_1, 
+ PARAM_2, 
+ True));
+}
+
+**************************************
+
+************* test_5 *************
+}
+<sep> still valid comment <sep>
+ return metadata;
+}
+
+**************************************
+

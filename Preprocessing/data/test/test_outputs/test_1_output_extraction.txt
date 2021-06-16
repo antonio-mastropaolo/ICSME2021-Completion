@@ -1,0 +1,43 @@
+************* test_1 *************
+if (this.previousMetadata != null) {
+ <sep> multi lint comment
+ single line 
+ single line 
+ <sep>
+ List<ItemMetadata> items = this.previousMetadata.getItems();
+
+**************************************
+
+************* test_1 *************
+List<ItemMetadata> items = this.previousMetadata.getItems();
+<sep> comment up to date <sep>
+ for (ItemMetadata item : items) {
+
+**************************************
+
+************* test_1 *************
+for (ItemMetadata item : items) { 
+<sep> c1 c2 c3 <sep>
+
+**************************************
+
+************* test_1 *************
+for (ItemMetadata item : items) { 
+<sep> c1 c2 c3 <sep>
+
+**************************************
+
+************* test_1 *************
+<sep> still valid comment <sep>
+ metadata.add(item);
+
+**************************************
+
+************* test_1 *************
+metadata.add(item); 
+ <sep> place very high stake on this call <sep>
+ calling.call(x);
+}
+
+**************************************
+

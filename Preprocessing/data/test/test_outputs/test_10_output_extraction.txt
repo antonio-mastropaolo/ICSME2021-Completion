@@ -1,0 +1,32 @@
+************* test_10 *************
+double ratio;
+ <sep> 
+ Desired bond length for storing structures in MDL mol files This
+ should probably be set externally (from system wide settings)
+ <sep>
+ double desiredBondLength = 1.5;
+
+**************************************
+
+************* test_10 *************
+double desiredBondLength = 1.5;
+<sep> loop over all bonds and determine the mean bond distance <sep>
+ int counter = 0;
+ for (IBond bond : container.bonds()) {
+
+**************************************
+
+************* test_10 *************
+int counter = 0;
+ for (IBond bond : container.bonds()) {
+<sep> only consider two atom bonds into account <sep>
+ if (bond.getAtomCount() == 2) {
+ counter++;
+ IAtom atom1 = bond.getBegin();
+ IAtom atom2 = bond.getEnd();
+ bondlength += Math.sqrt(Math.pow(atom1.getPoint2d().x - atom2.getPoint2d().x, 2)
+ + Math.pow(atom1.getPoint2d().y - atom2.getPoint2d().y, 2));
+}
+
+**************************************
+
