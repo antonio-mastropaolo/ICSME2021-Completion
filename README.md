@@ -46,7 +46,7 @@ Finally, you can run: ```python3 main.py --n 3 --save_file_name 3-Grams.pickle``
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Additional:** In <a href='https://github.com/antonio-mastropaolo/ICSME2021-Completion/tree/main/Miscellaneous'>Miscellaneous</a> folder, you can find all the additional notebooks we used for computing the BLEU score, the Levenshtein distance, the McNemar statistical test and the overlap metrics. Furthermore, <a href='https://drive.google.com/drive/folders/1pQKhs3NG26tbc3oQlzD9ylPIW2o20Eqt?usp=sharing'>here</a> and <a href='https://drive.google.com/drive/folders/1RF8Nv9Q7I1ArptFkmgu2qM_A-OrPx3gH?usp=sharing'>here</a> you can experiment with our pre-trained and fine-tuned models.
-
+Ultimately, we also provide a PyTorch model to further experiment in a more '_friendly_' environment using the <a href='https://huggingface.co/transformers/'> Hugging face library </a>
 ##### Our results:  <a href='https://drive.google.com/drive/folders/1I2HBKy6HvFgn-E2orJIentxpc5qGEbGe?usp=sharing'>:open_file_folder: </a> 
 
 
