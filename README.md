@@ -16,7 +16,7 @@ In order to pre-train and then finetune a [T5 small](https://github.com/google-r
     ```
     pip install sentencepiece
     import sentencepiece as spm
-    spm.SentencePieceTrainer.train('--input=pretraining.txt --model_prefix=dl4se --vocab_size=32000 --bos_id=-1  --eos_id=1 --unk_id=2 --pad_id=0') 
+    spm.SentencePieceTrainer.train('--input=pretraining.txt --model_prefix=sp --vocab_size=32000 --bos_id=-1  --eos_id=1 --unk_id=2 --pad_id=0') 
     ```
     The new model has to be trained on the entire pre-training corpus.
 
